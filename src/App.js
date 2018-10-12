@@ -46,7 +46,6 @@ class Bubbles extends Component {
   }
 
   blowing = event => {
-    console.log(event)
     if(event.key===' ') {
       this.makeBubble()
     }
