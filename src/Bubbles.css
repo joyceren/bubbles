@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  position: fixed;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.bubble {
+  position: absolute;
+  background: linear-gradient(#99daff, #C0ECFC) ;
+  border: 2px #65C2F6 solid;
+  border-radius: 50%;
+  transition: 5s;
+  transform: translate(-50%, -50%);
+  animation: Bubble-drop 750s 1;
+  z-index: 1;
+}
+
+.shine {
+  transform: rotate(45deg);
+  width: 10%;
+  height: 5%;
+  background-color: white;
+  z-index: 2;
+  position: absolute;
+  left: 80%;
+  top: 25%;
+  border-radius: 50%;
+}
+
+.shine.popped {
+  display: none;
+}
+
+.bubble.popped {
+  pointer-events: none;
+  background: none;
+  border: #65C2F6 2px dashed;
+  transition: ease-in 500ms;
+  z-index: -1;
+}
+
+.backdrop {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+
+@keyframes Bubble-drop {
+  0% {  }
+  1% { top: 100vh}
+  10% { top: 100vh}
+  100% { top: 100vh}
+}
