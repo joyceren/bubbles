@@ -1,2 +1,4 @@
 ## Bubbles!
-filterbubble.news/bubbles
+Pop some bubbles.
+
+Mouth noises courtesy of Joyce.
